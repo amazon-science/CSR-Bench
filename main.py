@@ -1,12 +1,12 @@
 import os
 import re
 import json
-from gsr.model import BashScriptDrafer, LogAnalyzer, IssueRagger, WebSearcher
-from gsr.utils import extract_commands, repo_structure
-from gsr.bash_utils import CommandExecutor
-from gsr.const import NAME_TO_ID
+from csr.model import BashScriptDrafer, LogAnalyzer, IssueRagger, WebSearcher
+from csr.utils import extract_commands, repo_structure
+from csr.bash_utils import CommandExecutor
+from csr.const import NAME_TO_ID
 from colorama import Fore, Style, init
-from gsr.retriever import RetrievalEngine
+from csr.retriever import RetrievalEngine
 import google.generativeai as genai
 import openai
 

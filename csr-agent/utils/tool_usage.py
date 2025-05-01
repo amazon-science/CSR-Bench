@@ -4,7 +4,7 @@ import boto3
 from botocore.exceptions import ClientError
 from botocore.config import Config
 
-from gsr.perplexity import pplx
+from csr.perplexity import pplx
 
 
 class ToolAgent:
@@ -22,12 +22,6 @@ class ToolAgent:
         # self.tools = dict()
         logging.basicConfig(level=logging.INFO)
 
-    # def get_top_song(self, call_sign):
-    #     """Returns the most popular song for the requested station."""
-    #     if call_sign == 'WZPZ':
-    #         return "Elemental Hotel", "8 Storey Hike"
-    #     else:
-    #         raise StationNotFoundError(f"Station {call_sign} not found.")
 
     def pplx(self, message):
         return pplx(message)
@@ -45,18 +39,14 @@ class ToolAgent:
         output_message = response['output']['message']
         messages.append(output_message)
         stop_reason = response['stopReason']
-        # print(response)
 
         if stop_reason == 'tool_use':
             tool_requests = output_message['content']
-            # print('## Tool Requests ##', tool_requests)
             for tool_request in tool_requests:
                 if 'toolUse' in tool_request:
                     tool = tool_request['toolUse']
                     self.logger.info("Requesting tool %s. Request: %s", tool['name'], tool['toolUseId'])
                     try:
-                        # song, artist = self.get_top_song(tool['input']['sign'])
-                        # tool_result = {"toolUseId": tool['toolUseId'], "content": [{"json": {"song": song, "artist": artist}}]}
                         analysis = self.pplx(tool['input']['log_msg'])
                         tool_result = {"toolUseId": tool['toolUseId'], "content": [{"text": analysis}]}
                     except Exception as err:
@@ -71,24 +61,9 @@ class ToolAgent:
                     )
                     output_message = response['output']['message']
 
-        # for content in output_message['content']:
-        #     print(json.dumps(content, indent=4))
         print(output_message['content'][0]['text'])
 
-#     def main(self):
-#         input_text = """Traceback (most recent call last):
-#   File "<stdin>", line 1, in <module>
-# ModuleNotFoundError: No module named 'esm'"""
 
-#         print(f"Question: {input_text}")
-#         try:
-#             self.generate_text(input_text)
-#         except ClientError as err:
-#             message = err.response['Error']['Message']
-#             self.logger.error("A client error occurred: %s", message)
-#             print(f"A client error occurred: {message}")
-#         else:
-#             print(f"Finished generating text with model {self.model_id}")
     def query(self, msg):
         try:
             self.generate_text(msg)

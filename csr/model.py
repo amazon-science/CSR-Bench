@@ -5,108 +5,9 @@ import time
 from botocore.config import Config
 from .const import ERR_MSG
 from .web_search import perplexity_search
-from gsr.retriever import RetrievalEngine
+from csr.retriever import RetrievalEngine
 import openai
 import google.generativeai as genai
-
-# class CoreAgent:
-#     def __init__(self, system_prompt, model_id='anthropic.claude-3-haiku-20240307-v1:0', region_name='us-west-2', max_attempts=10, adaptive_mode='adaptive', max_tokens=4096):
-#         self.system_prompt = system_prompt
-#         self.model_id = model_id
-#         self.max_tokens = max_tokens
-
-#         self.config = Config(
-#             retries={
-#                 'max_attempts': max_attempts,
-#                 'mode': adaptive_mode
-#             }
-#         )
-#         self.brt = boto3.client(service_name='bedrock-runtime', region_name=region_name, config=self.config)
-
-#     def query(self, input_str):
-#         input_prompt = input_str
-
-#         user_message = {"role": "user", "content": f"{input_prompt}"}
-#         messages = [user_message]
-
-#         body = json.dumps(
-#             {
-#                 "anthropic_version": "bedrock-2023-05-31",
-#                 "max_tokens": self.max_tokens,
-#                 "system": self.system_prompt,
-#                 "messages": messages
-#             }
-#         )
-
-#         FAILURE_COUNTER = 0
-#         while True:
-#             try:
-#                 response = self.brt.invoke_model(body=body, modelId=self.model_id)
-#                 break
-#             except Exception as e:
-#                 FAILURE_COUNTER += 1
-#                 if FAILURE_COUNTER >= 5:
-#                     break
-#                 print(f'Exception encountered: {e}. Retrying in 60 seconds...')
-                
-#                 time.sleep(60)
-#                 continue
-
-#         if FAILURE_COUNTER >= 5:
-#             return ERR_MSG
-
-#         response_body = json.loads(response.get('body').read())
-
-#         return response_body['content'][0]['text']
-
-
-"""
-class CoreAgent:
-    def __init__(self, system_prompt, model_id='anthropic.claude-3-haiku-20240307-v1:0', region_name='us-west-2'):
-        self.model_id = model_id
-        self.system_prompt = [{"text": system_prompt}]
-        self.brt = boto3.client(service_name='bedrock-runtime', region_name=region_name)
-
-    def query(self, input_str):
-        user_message = {"role": "user", "content": [{"text": input_str}]}
-        messages = [user_message]
-        FAILURE_COUNTER = 0
-
-        while True:
-            try:
-                response = self.brt.converse(
-                    modelId=self.model_id,
-                    messages=messages,
-                    system=self.system_prompt,
-                )
-                break
-            except Exception as e:
-                FAILURE_COUNTER += 1
-                if FAILURE_COUNTER >= 5:
-                    return "Error: Failed to get a response after multiple attempts."
-                print(f'Exception encountered: {e}. Retrying in 60 seconds...')
-                time.sleep(60)
-
-        llm_response = response['output']['message']['content'][0]['text']
-        return llm_response
-"""
-
-
-# def transform_to_gemini(messages_openai_style, sys_prompt=''):
-#     messages_gemini = []
-    
-#     for message in messages_openai_style:
-#         if message['role'] == 'system':
-#             sys_prompt = message['content']
-#         elif message['role'] == 'user':
-#             messages_gemini.append({'role': 'user', 'parts': [message['content']]})
-#         elif message['role'] == 'assistant':
-#             messages_gemini.append({'role': 'model', 'parts': [message['content']]})
-    
-#     if sys_prompt and messages_gemini:
-#         messages_gemini[0]['parts'].insert(0, f"[SYS]\n{sys_prompt}\n[/SYS]\n")
-    
-#     return messages_gemini
 
 
 class CoreAgent:
@@ -175,48 +76,6 @@ class CoreAgent:
         return llm_response
 
 
-
-
-
-"""
-import streamlit as st
-import openai
-
-client = openai.OpenAI()
-
-
-def generate_response(prompt):
-    completion = client.chat.completions.create(
-        model="gpt-4o-mini",
-        messages=[
-            {"role": "system", "content": "You are a helpful assistant."},
-            {
-                "role": "user",
-                "content": prompt
-            }
-        ]
-    )
-    
-    return completion.choices[0].message.content
-
-# Streamlit app
-st.title("GPT-4o Mini Chatbot")
-
-user_input = st.text_input("You: ", "")
-
-if st.button("Send"):
-    if user_input:
-        response = generate_response(user_input)
-        st.text_area("GPT-4o Mini:", response, height=200)
-    else:
-        st.warning("Please enter a message.")
-"""
-
-
-# Multiple-line commands
-# draft_sys_prompt = """Generate bash script from README. Generate bash commands ONLY: ```bash``` block. You must use the following format to generate the content.
-# multiple-line commands should be merged into a single line command.
-# - Extract bash commands ONLY (```bash``` block) and fill in the closest command category.
 
 drafter_sys_prompt = """Extract bash script from README.
 - Must use the COMMANDS format below wrapped in a ```bash``` block and executable.
@@ -481,12 +340,3 @@ class WebSearcher(CoreAgent):
             'response': super().query(query_str)
         }
 
-        # return super().query(
-        #     searcher_query_template.format(
-        #         command=log['command'],
-        #         stdout=self.last_2048_tokens_lambda(log['stdout']),
-        #         stderr=self.last_2048_tokens_lambda(log['stderr']),
-        #         reference_from_web_search=reference_from_web_search,
-        #         # tree_dir=self.last_2048_tokens_lambda(log['tree_dir']),
-        #     )
-        # )

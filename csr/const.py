@@ -50,13 +50,13 @@ NAME_TO_ID = {
 
     "Llama_3.1_8b_Instruct": "meta.llama3-1-8b-instruct-v1:0",
     "Llama_3.1_70b_Instruct": "meta.llama3-1-70b-instruct-v1:0",
-    # "Llama_3.1_405B_Instruct": "meta.llama3-1-405b-instruct-v1:0",
+    "Llama_3.1_405B_Instruct": "meta.llama3-1-405b-instruct-v1:0",
 
-    # "Mistral_7B_Instruct": "mistral.mistral-7b-instruct-v0:2",
-    # "Mixtral_8X7B_Instruct": "mistral.mixtral-8x7b-instruct-v0:1",
+    "Mistral_7B_Instruct": "mistral.mistral-7b-instruct-v0:2",
+    "Mixtral_8X7B_Instruct": "mistral.mixtral-8x7b-instruct-v0:1",
     "Mistral_Large": "mistral.mistral-large-2402-v1:0",
     "Mistral_Large_2": "mistral.mistral-large-2407-v1:0",
-    # "Mistral_Small": "mistral.mistral-small-2402-v1:0",
+    "Mistral_Small": "mistral.mistral-small-2402-v1:0",
     # gpt-4o gpt-4o-mini gpt-4-turbo
     "GPT_4o": "gpt-4o",
     "GPT_4o_Mini": "gpt-4o-mini",

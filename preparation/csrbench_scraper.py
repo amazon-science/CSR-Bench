@@ -99,14 +99,14 @@ def download_github_repos(file_path, folder):
             time.sleep(60)
 
     # Saving the dictionary as a JSON file
-    with open('../data/meta/GSRBench100_commit_ids.json', 'w') as file:
+    with open('../data/meta/CSRBench100_commit_ids.json', 'w') as file:
         json.dump(commit_ids, file, indent=4)
 
 
 # Path to the text file containing the GitHub links
-file_path = '../data/meta/GSRBench100.txt'
+file_path = '../data/meta/CSRBench100.txt'
 
 # Target folder
-folder = '../data/GSRBench100/'
+folder = '../data/CSRBench100/'
 
 download_github_repos(file_path, folder)

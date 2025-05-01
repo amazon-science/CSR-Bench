@@ -23,12 +23,6 @@ def perplexity_search(question):
         "content-type": "application/json"
     }
 
-    # response = requests.post(url, json=payload, headers=headers)
-    # result = json.loads(response.text)
-    # try:
-    #     return result['choices'][0]['message']['content']
-    # except:
-    #     return result.text
     response = requests.post(url, json=payload, headers=headers)
     try:
         result = json.loads(response.text)

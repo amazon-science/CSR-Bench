@@ -2,14 +2,14 @@
 
 ## Overview
 
-The `gsr-bench` repository provides a benchmarking and retrieval system with utilities for executing bash commands, interacting with models, and web searching. This repository is organized into several Python scripts that serve various functions, such as data retrieval, bash utilities, and model execution. 
+The `csr-bench` repository provides a benchmarking and retrieval system with utilities for executing bash commands, interacting with models, and web searching. This repository is organized into several Python scripts that serve various functions, such as data retrieval, bash utilities, and model execution. 
 
 ## Repository Structure
 
 - **`main.py`**: The entry point of the repository where the core functionality is implemented.
 - **`docker_setup.sh`**: A shell script to set up the environment and conduct experiments using Docker.
 - **`requirements.txt`**: A list of Python dependencies required to run the project.
-- **`gsr/`**: The main module directory containing various Python utilities:
+- **`csr/`**: The main module directory containing various Python utilities:
     - `bash_utils.py`: Functions related to executing and handling bash commands.
     - `retriever.py`: Handles data and information retrieval from Github Issues.
     - `model.py`: Manages machine learning model-related operations.
@@ -58,19 +58,19 @@ python main.py
 
 ### Bash Utilities
 
-The `gsr/bash_utils.py` module provides a set of utilities to execute and interact with bash commands programmatically. To use this, import the necessary functions into your script:
+The `csr/bash_utils.py` module provides a set of utilities to execute and interact with bash commands programmatically. To use this, import the necessary functions into your script:
 
 ```python
-from gsr.bash_utils import your_function_here
+from csr.bash_utils import your_function_here
 ```
 
 
 ### Model Operations
 
-The `gsr/model.py` provides functions for loading, evaluating, or interacting with machine learning models. Example:
+The `csr/model.py` provides functions for loading, evaluating, or interacting with machine learning models. Example:
 
 ```python
-from gsr.model import run_model
+from csr.model import run_model
 
 model_results = run_model(model_input)
 ```

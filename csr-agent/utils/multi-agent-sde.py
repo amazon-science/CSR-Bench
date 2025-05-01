@@ -18,13 +18,10 @@ def call_claude3(inputs, start, workload_size, model_id='anthropic.claude-3-haik
                        region_name='us-west-2', config=config)
     results = []
     for i in range(start, min(start+workload_size, len(inputs))):
-        # input_prompt = inputs[i]
         input_prompt = inputs[i]['input']
         if input_prompt == 'missing':
             results.append((i, 'score: 0\n'))
             continue
-        
-        # print(input_prompt)
         
         user_message = {"role": "user", "content": f"{input_prompt}"}
         messages = [user_message]
@@ -39,7 +36,6 @@ def call_claude3(inputs, start, workload_size, model_id='anthropic.claude-3-haik
             }
         )
 
-        #response = brt.invoke_model(body=body, modelId=model_id)
         while True:
             try:
                 response = brt.invoke_model(body=body, modelId=model_id)
@@ -50,7 +46,6 @@ def call_claude3(inputs, start, workload_size, model_id='anthropic.claude-3-haik
                 continue
 
         response_body = json.loads(response.get('body').read())
-        # results.append((i, response_body['content'][0]['text']))
         inputs[i]['command'] = response_body['content'][0]['text']
         inputs[i]['idx'] = i
         results.append(
@@ -67,13 +62,8 @@ def inference(input):
 class LLMAgent:
     def __init__(self, name='Agent', model_name='lmsys/vicuna-7b-v1.5'):
         self.name = name
-        # self.tokenizer = AutoTokenizer.from_pretrained(model_name)
-        # self.model = AutoModelForCausalLM.from_pretrained(model_name)
 
     def query(self, prompt):
-        # inputs = self.tokenizer(prompt, return_tensors='pt')
-        # outputs = self.model.generate(**inputs, max_length=150)
-        # response = self.tokenizer.decode(outputs[0], skip_special_tokens=True)
         response = inference(prompt)
         return response
 

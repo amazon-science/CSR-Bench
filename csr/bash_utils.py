@@ -1,6 +1,6 @@
 import pexpect
 import re
-from gsr.model import CoreAgent
+from csr.model import CoreAgent
 
 
 sys_prompt = """Given the execution output, decide if the command is successful or not.
@@ -176,21 +176,21 @@ if __name__ == "__main__":
     executor = CommandExecutor(timeout=30)
 
     # Assuming you need to activate an environment
-    execution_ret = executor.execute_cmd('python -m venv venv', directory='/home/yijia/git-bench/data/gsr_data/Repo/')
+    execution_ret = executor.execute_cmd('python -m venv venv', directory='./data/csr_data/Repo/')
     # print(execution_ret)
 
     # Execute commands in the activated environment
-    execution_ret = executor.execute_cmd('source venv/bin/activate', directory='/home/yijia/git-bench/data/gsr_data/Repo/')
+    execution_ret = executor.execute_cmd('source venv/bin/activate', directory='./data/csr_data/Repo/')
     # print(execution_ret)
 
     # Optionally execute a command in a specific directory
-    execution_ret = executor.execute_cmd('pip install -r requirements.txt', directory='/home/yijia/git-bench/data/gsr_data/Repo/')
+    execution_ret = executor.execute_cmd('pip install -r requirements.txt', directory='./data/csr_data/Repo/')
     # print(execution_ret)
 
-    execution_ret = executor.execute_cmd('which pip', directory='/home/yijia/git-bench/data/gsr_data/Repo/')
+    execution_ret = executor.execute_cmd('which pip', directory='./data/csr_data/Repo/')
     # print(execution_ret)
 
-    execution_ret = executor.execute_cmd('ABCBACBAC', directory='/home/yijia/git-bench/data/gsr_data/Repo/')
+    execution_ret = executor.execute_cmd('ABCBACBAC', directory='./data/csr_data/Repo/')
     # print(execution_ret)
 
 
