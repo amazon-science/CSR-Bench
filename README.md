@@ -1,8 +1,11 @@
-# GSR-Bench Repository
+# CSR-Bench Repository
 
 ## Overview
 
 The `csr-bench` repository provides a benchmarking and retrieval system with utilities for executing bash commands, interacting with models, and web searching. This repository is organized into several Python scripts that serve various functions, such as data retrieval, bash utilities, and model execution. 
+
+For more details, please check our NAACL 2025 paper [CSR-Bench: Benchmarking LLM Agents in Deployment of
+Computer Science Research Repositories](https://aclanthology.org/2025.naacl-long.633.pdf)
 
 ## Repository Structure
 
