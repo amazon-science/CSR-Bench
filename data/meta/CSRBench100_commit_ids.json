@@ -1,0 +1,402 @@
+{
+    "https://github.com/stanford-oval/storm": [
+        "263d894e34e2a399a18f80fbf3c9028dc06e1a1d",
+        "main"
+    ],
+    "https://github.com/cleardusk/3DDFA_V2": [
+        "1b6c67601abffc1e9f248b291708aef0e43b55ae",
+        "master"
+    ],
+    "https://github.com/RobustFieldAutonomyLab/LeGO-LOAM": [
+        "896a7a95a8bc510b76819d4cc48707e344bad621",
+        "master"
+    ],
+    "https://github.com/cure-lab/LTSF-Linear": [
+        "0c113668a3b88c4c4ee586b8c5ec3e539c4de5a6",
+        "main"
+    ],
+    "https://github.com/adobe/antialiased-cnns": [
+        "b27a34a26f3ab039113d44d83c54d0428598ac9c",
+        "master"
+    ],
+    "https://github.com/keyu-tian/SparK": [
+        "a63e386f8e5186bc07ad7fce86e06b08f48a61ea",
+        "main"
+    ],
+    "https://github.com/elliottwu/unsup3d": [
+        "dc961410d61684561f19525c2f7e9ee6f4dacb91",
+        "master"
+    ],
+    "https://github.com/Jeff-sjtu/HybrIK": [
+        "9b8681dcf3c902dd5dacc01520ba04982990e1e2",
+        "main"
+    ],
+    "https://github.com/wyhuai/DDNM": [
+        "00b58eac7843a4c99114fd8fa42da7aa2b6808af",
+        "main"
+    ],
+    "https://github.com/tjiiv-cprg/EPro-PnP": [
+        "42412220b641aef9e8943ceba516b3175631d370",
+        "main"
+    ],
+    "https://github.com/JosephKJ/OWOD": [
+        "23890f188cd1a6801c6ac0e3dacd78b8572b8c29",
+        "master"
+    ],
+    "https://github.com/wpeebles/gangealing": [
+        "ffa6387c7ffd3f7de76bdc693dc2272e274e9bfd",
+        "main"
+    ],
+    "https://github.com/graphdeeplearning/graphtransformer": [
+        "c9cd49368eed4507f9ae92a137d90a7a9d7efc3a",
+        "main"
+    ],
+    "https://github.com/YyzHarry/imbalanced-regression": [
+        "a6fdc45d45c04e6f5c40f43925bc66e580911084",
+        "main"
+    ],
+    "https://github.com/bnu-wangxun/Deep_Metric": [
+        "04ca51093db13135a04e3c94401bc898c6af0c40",
+        "master"
+    ],
+    "https://github.com/YyzHarry/imbalanced-semi-self": [
+        "b91ad29fd8805ddf0a146f735905b0c869e68ae4",
+        "master"
+    ],
+    "https://github.com/huggingface/naacl_transfer_learning_tutorial": [
+        "dc976775bb11edee24a77e2ce161450089c5e169",
+        "master"
+    ],
+    "https://github.com/luost26/diffusion-point-cloud": [
+        "1e30d48d018820fbc7c67c8b3190215bd41878e4",
+        "main"
+    ],
+    "https://github.com/shamangary/FSA-Net": [
+        "4361d0e48103bb215d15734220c9d17e6812bb48",
+        "master"
+    ],
+    "https://github.com/kwotsin/mimicry": [
+        "a7fda06c4aff1e6af8dc4c4a35ed6636e434c766",
+        "master"
+    ],
+    "https://github.com/richardaecn/class-balanced-loss": [
+        "1d7857208a2abc03d84e35a9d5383af8225d4b4d",
+        "master"
+    ],
+    "https://github.com/shamangary/SSR-Net": [
+        "f98b6cbe1c9c8c78649e5a331f94113564521525",
+        "master"
+    ],
+    "https://github.com/SimonKohl/probabilistic_unet": [
+        "7a2e79d549184d0f3a47d0deaa054a70b0f54a3f",
+        "master"
+    ],
+    "https://github.com/baudm/parseq": [
+        "1902db043c029a7e03a3818c616c06600af574be",
+        "main"
+    ],
+    "https://github.com/lkeab/BCNet": [
+        "d6580e8a2a0b5e71c0ae6913ed0340c101d35723",
+        "main"
+    ],
+    "https://github.com/SysCV/transfiner": [
+        "5b61fb53d8df5484f44c8b7d8415f398fd283ddc",
+        "main"
+    ],
+    "https://github.com/bertjiazheng/Structured3D": [
+        "d06d1b241b290ae7ed6b311d710ffafffcb567de",
+        "master"
+    ],
+    "https://github.com/zju3dv/mvpose": [
+        "38b958f423f2de2bf7562f5a386c27440eab8c53",
+        "master"
+    ],
+    "https://github.com/dddzg/up-detr": [
+        "44c0c6eb4bddf409a41cbaae31b7360062495199",
+        "master"
+    ],
+    "https://github.com/GraphSAINT/GraphSAINT": [
+        "c9b1e340d7b951465ac4a9251eef93832e68b003",
+        "master"
+    ],
+    "https://github.com/PinataFarms/DAD-3DHeads": [
+        "3acc5c2a1177d354a1247c49e44a83ad682ea6a1",
+        "main"
+    ],
+    "https://github.com/shenweichen/DSIN": [
+        "e8ba406eeda0916214897d44866bffc419c3edb0",
+        "master"
+    ],
+    "https://github.com/Lakonik/SSDNeRF": [
+        "b9d195db76bb715c475b24287362d9627d77d3bb",
+        "main"
+    ],
+    "https://github.com/Jeff-sjtu/res-loglikelihood-regression": [
+        "203dc3195ee5a11ed6f47c066ffdb83247511359",
+        "master"
+    ],
+    "https://github.com/wvangansbeke/Unsupervised-Semantic-Segmentation": [
+        "dfd5fa0a1542f2b26824b4059bd2bb1240c5c94b",
+        "main"
+    ],
+    "https://github.com/yzhq97/transmomo.pytorch": [
+        "0e4d2f0e7e8af159e018c8a85f9d789de963a83a",
+        "master"
+    ],
+    "https://github.com/layumi/Seg-Uncertainty": [
+        "6fce9eae141c2c0592b3e7c1b3e5f8ee7b1ce9a6",
+        "master"
+    ],
+    "https://github.com/JiangWenPL/multiperson": [
+        "e8ae029cc691f3f9c3958a23f762f3d72cf65c54",
+        "master"
+    ],
+    "https://github.com/Owen-Liuyuxuan/visualDet3D": [
+        "ad229f2e491cba2c48f9bb2c211fe672294e2398",
+        "master"
+    ],
+    "https://github.com/kach/gradient-descent-the-ultimate-optimizer": [
+        "b3b047e02ca6d32e0e61e34a0ca6e0bc57e55bdf",
+        "main"
+    ],
+    "https://github.com/cure-lab/SmoothNet": [
+        "c03e93e8a14f55b9aa087dced2751a7a5e2d50b0",
+        "main"
+    ],
+    "https://github.com/MinkaiXu/GeoDiff": [
+        "ea0ca48045a2f7abfccd7f0df449e45eb6eae638",
+        "main"
+    ],
+    "https://github.com/MIVRC/MSRN-PyTorch": [
+        "a0e038de7eb42e21d2e88c38e6490b61a02c566e",
+        "master"
+    ],
+    "https://github.com/charlesCXK/RGBD_Semantic_Segmentation_PyTorch": [
+        "32b3f86822d278103a13ea6f93f9668d3b631398",
+        "master"
+    ],
+    "https://github.com/xuchen-ethz/snarf": [
+        "ae0c893cc049f0f8270eaa401e138dff5d4637b9",
+        "main"
+    ],
+    "https://github.com/IDEA-Research/HumanSD": [
+        "c5db29dd66a3e40afa8b4bed630f0aa7ea001880",
+        "main"
+    ],
+    "https://github.com/FuxiaoLiu/LRV-Instruction": [
+        "0a5ab538ed96c3e0c9835b5fe02cc8f7fa0bf8fa",
+        "main"
+    ],
+    "https://github.com/daveredrum/ScanRefer": [
+        "9d7483053e8d29acfd4db4eb1bc28f1564f5dddb",
+        "master"
+    ],
+    "https://github.com/Ysz2022/NeRCo": [
+        "6b0e1112231d0902976ad76357044de582a307f3",
+        "main"
+    ],
+    "https://github.com/Paranioar/SGRAF": [
+        "50d0c6f9caf759099b28371046f780342357c405",
+        "main"
+    ],
+    "https://github.com/sjmoran/CURL": [
+        "4be9753a8063f9833423e4aa5947ae7a64b114f8",
+        "master"
+    ],
+    "https://github.com/shaohua0116/Multiview2Novelview": [
+        "a5e236f3c564bf287c8a09d855fd2134ba86b299",
+        "master"
+    ],
+    "https://github.com/abhi1kumar/DEVIANT": [
+        "009955f3bbb21c38a687eaae59bdfcb82eca93e7",
+        "main"
+    ],
+    "https://github.com/JarrentWu1031/CCPL": [
+        "d0b6b326d7d624b5e8d1543a3a84a745a08fd883",
+        "main"
+    ],
+    "https://github.com/tfzhou/MATNet": [
+        "c8b95e527c486c304f711cc7dffb060f31abe19f",
+        "master"
+    ],
+    "https://github.com/PinataFarms/FEARTracker": [
+        "0a3bd039918909c79c1b7e55a4bfb7807520abde",
+        "main"
+    ],
+    "https://github.com/mabaorui/NeuralPull": [
+        "c093a52308a9b74446d24cc6c1b0fee5ee5bb7bb",
+        "master"
+    ],
+    "https://github.com/ShihaoShao-GH/SuperGlobal": [
+        "86946964b907e6f28a7264add2c15640fae30009",
+        "main"
+    ],
+    "https://github.com/tiangexiang/CurveNet": [
+        "c2e7cf642b7e08d9aec5b70263f6989a85c9e191",
+        "main"
+    ],
+    "https://github.com/StanfordMIMI/DDM2": [
+        "d07be20ad36446f8e35621d4b0d92e7cf54c169e",
+        "main"
+    ],
+    "https://github.com/zjunlp/DART": [
+        "d418ded8bd548ef25f2d030990e707a497e93483",
+        "main"
+    ],
+    "https://github.com/daiquocnguyen/Graph-Transformer": [
+        "99c88a116148fdaa8d3071fcc548e5c471ae607f",
+        "master"
+    ],
+    "https://github.com/acbull/GPT-GNN": [
+        "f26e13c69ddc8a3f2580cb16d0b9a1c73d89f4bc",
+        "master"
+    ],
+    "https://github.com/tatsu-lab/stanford_alpaca": [
+        "761dc5bfbdeeffa89b8bff5d038781a4055f796a",
+        "main"
+    ],
+    "https://github.com/tloen/alpaca-lora": [
+        "8bb8579e403dc78e37fe81ffbb253c413007323f",
+        "main"
+    ],
+    "https://github.com/meta-llama/llama3": [
+        "18f515a3c3c5f02cf45c6ac56cc5d039488e867a",
+        "main"
+    ],
+    "https://github.com/lm-sys/FastChat": [
+        "92a6d1fcd69a88ea169c0b01065ce44f1e690a2c",
+        "main"
+    ],
+    "https://github.com/mistralai/mistral-finetune": [
+        "5b8adb54a1263664d52dab6f94581bf24d7b59e3",
+        "main"
+    ],
+    "https://github.com/meta-llama/llama": [
+        "8fac8befd776bc03242fe7bc2236cdb41b6c609c",
+        "main"
+    ],
+    "https://github.com/meta-llama/llama-recipes": [
+        "8c1418e93b817cb6734a9cfe095b270f5a0f48f5",
+        "main"
+    ],
+    "https://github.com/openai/gpt-3": [
+        "d7a9bb505df6f630f9bab3b30c889e52f22eb9ea",
+        "master"
+    ],
+    "https://github.com/microsoft/graphrag": [
+        "61b5eea34783c58074b3c53f1689ad8a5ba6b6ee",
+        "main"
+    ],
+    "https://github.com/geekan/MetaGPT": [
+        "5446c7e490e7203c61b2ff31181551b2c0f4a86b",
+        "main"
+    ],
+    "https://github.com/princeton-nlp/SWE-agent": [
+        "36e430d27ffd11269738df92d6c521cab2207dcb",
+        "main"
+    ],
+    "https://github.com/eric-mitchell/direct-preference-optimization": [
+        "f8b8c0f49dc92a430bae41585f9d467d3618fe2f",
+        "main"
+    ],
+    "https://github.com/zilliztech/GPTCache": [
+        "75ab7ec7b871c8399a95d5bf528441f2856250dd",
+        "main"
+    ],
+    "https://github.com/SJTU-IPADS/PowerInfer": [
+        "61cac9bf25e60336bbad27ada9dbb809204473ac",
+        "main"
+    ],
+    "https://github.com/princeton-nlp/tree-of-thought-llm": [
+        "ab400345c5ea39d28ea6d7d3be0e417b11113c87",
+        "master"
+    ],
+    "https://github.com/mistralai/mistral-inference": [
+        "1f583071dc7aad2ca35cb9896140316ffece5b65",
+        "main"
+    ],
+    "https://github.com/state-spaces/mamba": [
+        "a71bb5a83bfa289b5807aefc1767232dee77b35e",
+        "main"
+    ],
+    "https://github.com/YyzHarry/multi-domain-imbalance": [
+        "2efbfefd34542e365293f798d79f70cee5e54303",
+        "main"
+    ],
+    "https://github.com/codeKgu/Text-GCN": [
+        "70b970a52efcb80235cf0ae3e578eaf80278d5f3",
+        "master"
+    ],
+    "https://github.com/vLAR-group/RayDF": [
+        "ca6c663523b777732788a5d8100d36251a482b31",
+        "master"
+    ],
+    "https://github.com/amazon-science/unconditional-time-series-diffusion": [
+        "3eafeffdffefd4d2f5344ac63e5627a746c331a3",
+        "main"
+    ],
+    "https://github.com/zjunlp/OntoProtein": [
+        "6360f458e11670ecfaf853ee68f2087b31439dc0",
+        "main"
+    ],
+    "https://github.com/Rose-STL-Lab/dyffusion": [
+        "832574f6f788a0cd4a4d75e8f59b3c07c7e8446b",
+        "main"
+    ],
+    "https://github.com/princeton-nlp/SimCSE": [
+        "7edb07e05cec0d5293fc1696b578d8056dba76ef",
+        "main"
+    ],
+    "https://github.com/princeton-nlp/LM-BFF": [
+        "c282f521001f9c299d29eec7b459266f2b14fbaf",
+        "main"
+    ],
+    "https://github.com/princeton-nlp/PURE": [
+        "b1e9cad39bec10eb3c355dc5a8e4e75dd0afebf5",
+        "main"
+    ],
+    "https://github.com/tatsu-lab/alpaca_eval": [
+        "32c8c0d068205c38b02003b67e0beec82a8f1ac2",
+        "main"
+    ],
+    "https://github.com/tatsu-lab/alpaca_farm": [
+        "30717ddae735365de756ee2085191b491a71788d",
+        "main"
+    ],
+    "https://github.com/THUDM/GraphMAE": [
+        "b14f080c919257b495e3cb6474286d5252d6a635",
+        "main"
+    ],
+    "https://github.com/lxuechen/private-transformers": [
+        "18ccc4eab7355e4ac96051a82434796f6aa4624b",
+        "main"
+    ],
+    "https://github.com/HazyResearch/hyena-dna": [
+        "d553021b483b82980aa4b868b37ec2d4332e198a",
+        "main"
+    ],
+    "https://github.com/princeton-nlp/MeZO": [
+        "552cb1b710767f9a6e1dc8f9645d7640376f9941",
+        "main"
+    ],
+    "https://github.com/zjunlp/HVPNeT": [
+        "52c77f7835a295d9c8534997b1316c42b2662972",
+        "main"
+    ],
+    "https://github.com/12wang3/rrl": [
+        "f8d0886b23c4e15f63c62c248b97d4eb73386ad1",
+        "main"
+    ],
+    "https://github.com/YyzHarry/SubpopBench": [
+        "4d3dbbe21029666ef19d040e110ec22908640c5b",
+        "main"
+    ],
+    "https://github.com/csdongxian/skip-connections-matter": [
+        "9b2e5cca9b673efcac253e16b2f55f6cda1a8692",
+        "master"
+    ],
+    "https://github.com/songlab-cal/tape": [
+        "6d345c2b2bbf52cd32cf179325c222afd92aec7e",
+        "master"
+    ]
+}
